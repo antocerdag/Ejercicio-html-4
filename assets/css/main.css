@@ -35,7 +35,27 @@ nav{
 	border: none;
 	height: 32px;
 	width: 32px;
-	background-image: url(../img/altavoz-2.png);
+	background-image: url(../img/altavoz.png);
+	margin-left: 10px;
+	margin-right: 10px; 
+	background-position: center;
+}
+#back{
+	background-color: rgb(250,250,250);
+	border: none;
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/retroceder-con-flecha-doble-simbolo-de-boton-multimedia.png);
+	margin-left: 10px;
+	margin-right: 10px; 
+	background-position: center;
+}
+#forward{
+	background-color: rgb(250,250,250);
+	border: none;
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/avance-rapido.png);
 	margin-left: 10px;
 	margin-right: 10px; 
 	background-position: center;
