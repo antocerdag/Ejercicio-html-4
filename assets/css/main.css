@@ -1,12 +1,46 @@
-#body{
+body{
 	background-color: #101010;
 }
 #reproductormusica{
 	width: 640px;
 	margin: 10px auto;
 }
-#nav{
+nav{
 	background-color: rgb(250,250,250);
 	width: 640px;
 	padding-bottom:3px; 
+}
+#defaultBar{
+	width: 640px;
+	position: relative;;
+	background-color: #606060;
+	height: 10px;
+}
+#barraprogreso{
+	position: absolute;
+	height: 10px;
+	background-color: #3498db
+}
+#play{
+	background-color: rgb(250,250,250);
+	border: none;
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/boton-de-reproduccion.png);
+	margin-left: 10px;
+	background-position: center;
+}
+#mute{
+	background-color: rgb(250,250,250);
+	border: none;
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/altavoz-2.png);
+	margin-left: 10px;
+	margin-right: 10px; 
+	background-position: center;
+}
+#mute:active,#play:active{
+	position: relative;
+	top: 2px;
 }

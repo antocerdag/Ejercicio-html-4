@@ -1,21 +1,11 @@
-var audio = null;
- function vidplay() {
-       var button = document.getElementById("reproductormusica");
-       if (video.paused) {
-          video.play();
-          button.textContent = "||";
-       } else {
-          video.pause();
-          button.textContent = ">";
-       }
-    }
-
-    function restart() {
-        var video = document.getElementById("Video1");
-        video.currentTime = 0;
-    }
-
-    function skip(value) {
-        var video = document.getElementById("Video1");
-        video.currentTime += value;
-    }      
+var mytrack = document.getElementById('mytrack');
+var play = document.getElementById('play');
+function playOrPause(){
+	if (!mytrack.paused && !mytrack.ended){
+		mytrack.pause();
+		play.style.backgroundImage = 'url(../img/boton-de-reproduccion.png)';
+	} else{
+		mytrack.play();
+		play.style.backgroundImage = 'url(../img/pausa.png)';
+	}
+}
